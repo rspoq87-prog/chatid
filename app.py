@@ -384,10 +384,10 @@ Códigos resgatados: {len(monitor.redeemed_codes)}
 # ---------- EXECUÇÃO ----------
 
 def main():
-    ALLOWED_USER_ID = int(os.getenv("ALLOWED_USER_ID"))
-    TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-    INSTAGRAM_USERNAME = os.getenv("INSTAGRAM_USERNAME")
-    INSTAGRAM_PASSWORD = os.getenv("INSTAGRAM_PASSWORD")
+    ALLOWED_USER_ID = "602987639"
+    TELEGRAM_TOKEN = "7712229052:AAHGhgiHo82XNmaVn6U6lFbLMfZayxGfFKU"
+    INSTAGRAM_USERNAME = "euitachiff"
+    INSTAGRAM_PASSWORD = "87216675BA@"
 
     monitor = InstagramChatMonitor(INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD, None, ALLOWED_USER_ID)
     if not monitor.login():
@@ -401,5 +401,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
